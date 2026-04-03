@@ -1,8 +1,10 @@
-math=50
-chem=50
+print('Subject Marks')
 phy=50
-hindi=40
-print(id(math))
-print(id(chem))
-print(id(phy))
-print(id(hindi))
+chem=60
+math=70
+print("physics={} chemistry={} Math={} ".format(phy,chem,math))
+print("physics={0} chemistry={1} Math={2} ".format(phy,chem,math))
+print("physics={x} chemistry={y} Math={z} ".format(x=phy,y=chem,z=math))
+total=phy+chem+math
+print("Total Marks:",f"{total}")
+print("Roll no:","7",zfill(4)) #zfill()-0007 for spaces
