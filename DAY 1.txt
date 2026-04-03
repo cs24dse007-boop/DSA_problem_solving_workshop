@@ -1,0 +1,25 @@
+Why python is dynamically typed language?
+python is interpreter based language
+python interpreter at the runtime it decides the class value values
+python use compiler and interpreter(PVM)
+type()-
+id() function is used to addresses
+math=50
+chem=50 same values same address
+
+type casting-convert one data type to another datatype
+
+33 reserve keywords-help4code
+True, Fales, None -expect from those all are in lowercase
+
+
+when we want to do address comparison we go identity operator 
+#Membership operator: we check that the object is present or no in the collection data structure
+
+#nested if else
+if condition1:
+    if condition 2:
+        #statement
+    else:
+else:
+

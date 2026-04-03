@@ -1,0 +1,12 @@
+#bool()
+print(bool(0))#Fales
+print(bool(15))#True
+print(bool(0+0j))#Fales
+print(bool(3.14))#True
+print(bool(0.0))#Fales
+print(bool(1+2j))#True
+print(bool(-1))#True
+print(bool(False))
+print(bool(True))#True
+print(bool())#Fales
+print(bool("Omkar"))#True
