@@ -1,90 +1,129 @@
-# list1=[-1,2,-3,4,5,-6]
-# pos=[]
-# neg=[]
-# a=[]
-# for i in list1:
-#     if i>0:
-#         pos.append(i)
+# print("prashantjha777".isalnum()) #combination of number and alphabets
+# print("prashantjha".isalpha())
+# print('777f'.isdigit())
+# print("'sdsdsdsd".islower())
+# print(' '.islower())
+# print('PRASHANTj'.isupper())
+# print("My Name Is Prashant".istitle())
+# print(''.istitle())
+# print(''.isspace())
+# print("Hello".startswith("He"))
+# print("Hello".endswith("lo")) 
+#-----------------------------------------------------------------------------------------
+# print("Prashant".find("r"))
+# print("Prashant".index("r"))
+# print("prashant jha".count("a"))
+#-----------------------------------------------------------------------------------------
+# dict={"name":"Alice","age":30}
+# i=int(input("Enter the key:"))
+
+#-----------------------------------------------------------------------------------------
+# mydict={1,2,3,3,4,5}
+# mydict1={}
+# for i in mydict:
+#     if i in mydict1:
+#         mydict1[i]+=1
 #     else:
-#        neg.append(i)
-# print(pos)
-# print(neg)
+#         mydict1[i]=1
+# print(mydict1)
 #-------------------------------------------------------------------------------------------------
-# for i in range(1,4): #==>outer loop==>Rows
-#     for j in range(1,4): #==>innner loop==>cols
-#         print(i,end="")
-#     print()
+# a=[5,7,8,3,7,8,9,2,3]
+# b=[]
+# for i in range(len(a)):
+#     counter=0
+#     key=a[i]
+    
+#     j=i+1
+#     while j<len(a):
+#         if key==a[j]:
+#             b.append(key)
+#         j=j+1
+   
+   
+# print(len(b))
 #-------------------------------------------------------------------------------------------------
-# for i in range(1,6):
-#     for j in range(1,6):
-#         print("*" ,end="")
-#     print()
+#find the second largest element
+# list=[7,3,9,2,8]
+# list.sort()
+# print(list)
+# print(list[-2])
 #-------------------------------------------------------------------------------------------------
-# for i in range(1,6):
-#     for j in range(1,1+i):
-#         print(j ,end="")
-#     print()
+# i=1
+# while i<=5:
+#     print(i)
+#     i=i+1
+
 #-------------------------------------------------------------------------------------------------
-# for i in range(1,6):
-#     for j in range(1,1+i):
-#         print(chr(64+i) ,end="")
-#     print()
+# username=""
+# password=""
+# while username!="admin" or password!="admin":
+#     username=input("enter username:")
+#     password=input("enter password:")
 #-------------------------------------------------------------------------------------------------
-# n=int(input("enter value"))
-# for i in range(1,n+1):
-#     for j in range(1,n+2-i):
-#         print("*" ,end="")
-#     print()
+# name='programming'
+# vowels=['a','e','i','o','u']
+# cons=0
+# vowel=0
+# for i in name:
+#     if i in vowels:
+#         vowel+=1
+#     else:
+#         cons+=1
+# print("consonent:",cons)
+# print("vovels:",vowel)
 #-------------------------------------------------------------------------------------------------
-# n=int(input("enter value"))
-# for i in range(1,n+1):
-#     for j in range(1,n+2-i):
-#         print(chr(64+j) ,end="")
-#     print()
+# list=[1,2,2,3,4,2]
+# list1=[]
+# a=int(input("Enter the value"))
+# for i in a:
+#     if i!=a:
+#         list1+=a
+# print(list1)
+    
 #-------------------------------------------------------------------------------------------------
-# import time
-# n=int(input("enter value"))
-# for i in range(1,n+1):
-#     for j in range(1,n+2-i):
-#         time.sleep(2)
-#         print(n+1-i ,end="")
-#     print()
+# list=[2,3,4,5]
+# product=1
+# for i in list:
+#     product*=i
+# print(product)
 #-------------------------------------------------------------------------------------------------
-# import time
-# n=int(input("enter value"))
-# for i in range(1,n+1):
-#     print(""*(n-i),end="")
-#     for j in range(1,n+2-i):
-#         time.sleep(2)
-#         print("*" ,end="")
-#     print()
+# f1=open("DFD0.jpeg","rb")
+# f2=open("Rossom.jpeg","wb")
+# data=f1.read()
+# f2.write(data)
+# print("New image is available with the name:")
 #-------------------------------------------------------------------------------------------------
-#1.rstrip()->to remove spaces at right hand side
-#2.lstrip()->to remove spaces at left hand side
-#3.strip()->to remove spaces at both side
+# import csv
+# f=open("student.csv","a",newline="")
+# a=csv.writer(f)
+# # a.writerow(["StudentID","rollno","name","mobileno"])
+# studentid=int(input("Enter the student id:"))
+# rollno=int(input("Enter the roll no:"))
+# name=input("Enter the student name")
+# mobileno=int(input("enter the mobile number:"))
+# a.writerow([studentid,rollno,name,mobileno])
+# print("Student record has save")
 #-------------------------------------------------------------------------------------------------
-# prg=input("Enter your programming name:")
-# p_name=prg.rstrip()
-# if p_name=="Python":
-#     print(p_name)
-# elif p_name=="java":
-#     print(p_name)
-# elif p_name=="cpp":
-#     print(p_name)
+# import csv
+# f=open("student2.csv","a",newline="")
+# a=csv.writer(f)
+# #a.writerow(["rollno","name","nobileno","p1","p2","p3","total","percentage","email","result"])
+# rollno=int(input("Enter the student roll no:"))
+# name=input("Enter the student name")
+# mobileno=int(input("enter the mobile number:"))
+# p1=int(input("enter the subject 1:"))
+# p2=int(input("enter the subject 2:"))
+# p3=int(input("enter the subject 3:"))
+# total=p1+p2+p3
+# percentage=total/300*100
+# email=input("enter the email:")
+# result=[]
+# if p1>=40 and p2>=40 and p3>=40:
+#     result="pass"
 # else:
-#     print("wrong programming name")
+#     result="fail"
+# a.writerow([rollno,name,mobileno,p1,p2,p3,total,percentage,email,result])
+# print("Student record has save")
 #-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------------------------
+
 #-------------------------------------------------------------------------------------------------
