@@ -1,41 +1,27 @@
-# str="aaabbbccccc"
-# str1={}
-# str1+=str
-# print(str1)
-#print(a)
-#----------------------------------------------------------------------------
-# str="aaabbbbcccc"
-# str=str.split()
-# str1=""
-# for i in str:
-#     str1[::-1]+""
-# print(str1)
-# str1=[]
-# str1+=str
-# str2=[]
-# str2+=reversed(str1)
-# print(str1)
-# print(str2)
+# Taking input from user
+# rows = int(input("Enter number of rows: "))
+# cols = int(input("Enter number of columns: "))
 
-#----------------------------------------------------------------------------------------------------------
-# arr=[2,3,4,5,5,6]
-# arr1=[]
-# arr2=[]
-# for i in arr:
-#     if i%2==0:
-#         arr1+=i
-#     else:
-#         arr2+=i
-# print(arr1)
-# print(arr2)
-#------------------------------------------------------------------------------------------------------
-# a=[1,2,3]
+# # Creating empty matrix
+# matrix = []
+
+# # Taking matrix elements
+# for i in range(rows):
+#     row = []
+#     for j in range(cols):
+#         value = int(input(f"Enter element at position [{i}][{j}]: "))
+#         row.append(value)
+#     matrix.append(row)
+#----------------------------------------------------------------------------
+# # Printing the matrix
+# print("Matrix is:")
+# for r in matrix:
+#     print(r)
+# a=[0,0,1,2,3,4,5,0,4]
 # b=[]
-# c=[]
-# print(a)
-# for i in a[::-1]:
-#     b.append(i)
-# print(b)
-# for j in b[::-1]:
-#     c.append(j)
-# print(c)
+# for i in a:
+#     if i==0:
+       
+# print(b)   
+
+#------------------------------------------------------------------------------
