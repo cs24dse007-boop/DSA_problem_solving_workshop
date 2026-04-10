@@ -1,70 +1,24 @@
-1.O(1)-Constant time
-array=[1,2,3,4,5]
-array[0]-//it takes constants time to access first elements
-----------------------------------------------------------------------------
-2.O(N)->Linear time complexity->Loop through array element
-array =[1,2,3,4,5]
-for element in array:
-      print(element)
- linear time since it is visiting only one elements
-----------------------------------------------------------------------------
- 3.O(LogN)-logarithmic time->find an element in sorted array
- array=(1,2,3,4,5)
-for index in range(0,len(array),3):
-       print(array[index])
-    #logarithmic time since it is visiting only some elements
-----------------------------------------------------------------------------
-4.O(N^2)-Quadratic time->Looking array a every index in the array twice
-array=(1,2,3,4,5)
+Points             recursion  iteration
+------------------------------------------------------------------------------------------------------
+space efficient->    No          Yes            No stack memory required in case of duration
+Time efficient->     No          Yes            in case of recursion system needs more time for pop and 
+                                                push elements to stack memory which makes iteration less 
+                                                time efficient
+Easy to code->       Yes         No             We use recursion especially in the cases we know that a 
+                                                problem can 
+                                                be divided into similar sub problems
+-----------------------------------------------------------------------------------------------------------
 
-for x in array:
-    for y in array:
-       print(x,y)
-------------------------------------------------------------------------------
-5.O(2^N):Exponential time->Double recursion in fibonacci
-def fibonacci(n):
-    if n<=1:
-       return N
-    return fibonacci(n-1)+fibonacci(n-2)
-------------------------------------------------------------------------------
-                              time complexity      space complexity
-create stack                       O(1)                 O(1)  
-Push                               O(1)                 O(1)   
-POp                                O(1)                 O(1)   
-Peek                               O(1)                 O(1)   
-isEmpty                            O(1)                 O(1)   
-isFull                             O(1)                 O(1)   
-Delete entire Stack                O(1)                 O(1)   
--------------------------------------------------------------------------------
-stack implementation is 2 level
-1.List
-2.linkedlist ->it is more useful
+2.Full Binary Tree
+-Each node has either 0 or children
+-No node has a single child
 
-Stack using List:
-     -easy to implements
-     -Speed problem when it grows
+3.complete binary tree:
+-all levels except possibly the last are completely filled
+-Nodes in the last level are filled from left to right
 
-Stack using linkedlist:
-     -Fast performance
-     -implementation is not easy
-------------------------------------------------------------------------------------
-                              time complexity      space complexity
-create Queue                       O(1)                 O(1)  
-Enqueue                            O(1)                 O(1)   
-Deueue                             O(1)                 O(1)   
-Peek                               O(1)                 O(1)   
-isEmpty                            O(1)                 O(1)    
-Delete entire Queue                O(1)                 O(1)   
--------------------------------------------------------------------------------------
-Queue using List:
-     -easy to implements
-     -Speed problem when it grows
+4.Perfect Binary Tree:
+-All internal nodes have exactly two nodes
+-all leaf nodes are at same level
 
-Queue using linkedlist:
-     -Fast performance
-     -implementation is not easy
---------------------------------------------------------------------------------------
-w     w
- h   h
-  e e
-   n
+5.Balanced Binary Tree
